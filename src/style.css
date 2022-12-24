@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;;
+}
+
+body {
+    background-color: #edf2f6;
+  }
+
+#topBar {
+    width: 100%;
+    height: 55px;
+    background: linear-gradient(110deg, #45BBF7, #455EF7);
+    position: fixed;
+    z-index: 100;
+}
+
+#topBar img{
+    margin-top: 5px;
+    margin-left: 55px;
+}
+
+#bottomBar {
+    background: #0E304D;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    height: 28px;
+    width: 100%;
+    color: #fff;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;
+    font-size: 11px;
+}
+
+#bottomBar p {
+    margin-right: 30px; 
+}
+
+#mainBody {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+#mainLeft {
+    flex-basis: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+#mainRight {
+    flex-basis: 35%;
+    margin-left: 15px;
+}
+
+#leftTop {
+    flex-basis: 65px;
+    margin-top: 20px;
+    margin-left: 46px;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+
+#leftBottom {
+    flex-basis: 300px;
+    margin-left: 50px;
+    margin-top: 18px;
+}
+
+#leftBottom p {
+    font-family: 'Open Sans', sans-serif;
+    align-items: flex-end;
+    font-size: 20px;
+}
+
+#rightCard {
+    padding: 0;
+    margin: 20px;
+    background-color: #FAFAFA;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 12px;
+    height: 580px;
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    border-left: solid #2EADFF 9px;
+    position: fixed;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 0.5fr));
+    grid-gap: 5px;
+}
+
+.card {
+    margin: 10px;
+    background-color: #FAFAFA;;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2);
+    height: 200px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+.card:hover {
+    animation: bounce 0.5s linear;
+}
+
+@keyframes bounce {
+    20% {
+        transform: translateY(-6px);
+    }
+}
+
+.cardTop {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-top: 10px;
+    border: solid rgba(75, 75, 75, 0.2);
+    border-radius: 10px;
+    padding: 3px;
+    width: 120px;
+}
+
+.cardTop img {
+    margin-right: 7px;
+}
+
+.cardBottom {
+    align-items: center;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    text-transform:capitalize;
+}
+
+.cardBottom img {
+    width: 105px;
+}
+
+.bttn {
+    border: solid #FAFAFA;
+    background-color: #45BBF7;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+    width: 75px;
+    height: 55px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 27px;
+    padding: 0;
+}
+
+.bttn:hover {
+    background-color: rgba(0,0,0,0.1);
+}
+
+.bttn:active {
+    background-color: #455EF7;
+    transform: translateY(2px);
+}
+
+#bttn1 {
+    margin-left: 30px; 
+}
+
+.infoTop {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.pokemonOfficialArt img {
+    border-radius: 100px;
+    background-color: rgba(75, 75, 75, 0.1);
+    padding: 15px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.infoMainData {
+    margin: 18px;
+    flex-direction: column;
+    text-transform: capitalize;
+}
+
+.infoMainData h3 {
+    font-size: 12px;
+}
+
+.infoTypes {
+    text-transform: capitalize;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+}
+
+.infoTypes h4 {
+    background-color: #45BBF7;
+    border-radius: 4px;
+    padding-left: 5px;
+    margin-right: 5px;
+    width: 70px;
+}
+
+.infoDescription {
+    margin: 20px;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.infoBasicStats {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    background-color: rgba(75, 75, 75, 0.1);
+    margin: 15px;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.basicStat {
+    flex-basis: 33%;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.infoSA {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+
+.infoAllStats {
+    flex-basis: 50%;
+    padding: 15px;
+    background-color: #95D2FA;
+    border-radius: 20px;
+    margin-right: 25px;
+}
+
+.infoAbilities {
+    flex-basis: 50%;
+    border-radius: 20px;
+    background-color: rgba(75, 75, 75, 0.1);
+    padding: 15px;
+}
+
+#abilities {
+    font-style: italic;
+    text-transform: capitalize;
+}
+
+@media screen and (max-width: 840px){
+    #mainLeft {
+        flex-basis: 45%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #leftTop {
+        align-items: center;
+        flex-basis: 20px;
+    }
+    
+    #mainRight {
+        flex-basis: 55%;
+        margin-left: 15px;
+    }
+    
+    #rightCard {
+        padding: 0;
+        margin: 20px;
+        background-color: #FAFAFA;
+        box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2);
+        border-radius: 12px;
+        height: 580px;
+        width: 47%;
+        display: flex;
+        flex-direction: row;
+        border-left: solid #2EADFF 9px;
+        position: fixed;
+    }
+
+    .card {
+        height: 240px;
+        width: 280px;
+        font-size: 16px;
+    }
+    
+    #cardTop {
+        margin-top: 20px;
+    }
+    
+    #cardTop img {
+        margin-right: 7px;
+        width: 30px;
+    }
+    
+    #cardBottom {
+        margin-bottom: 50px;
+    }
+    
+    #cardBottom img {
+        width: 120px;
+    }
+}
